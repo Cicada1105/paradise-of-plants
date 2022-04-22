@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="content-type" content="text/html" />
+
+		<title>PoP - My Garden</title>
+
+		<!-- Scripts -->
+		<script src="https://kit.fontawesome.com/de38352bbc.js" crossorigin="anonymous"></script>
+		<script src="./index.js"></script>
+
+		<!------------>
+		<!-- Styles -->
+		<!------------>
+		<!-- Global -->
+		<link rel="stylesheet" type="text/css" href="./global/styles.css" />
+		<!-- Local -->
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	<body>
+		<div id="bg-transparency"></div>
+		<!-- Background image 
+		<a href="https://unsplash.com/@josefin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josefin</a> on <a href="https://unsplash.com/s/photos/plant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+		<header class="flex-cont">
+			<div id="logo-cont" class="header-item">
+				<div class="flex-cont">
+					<img src="./resources/pop-logo.png" alt="Paradise of Plants Logo" />
+					<h2>PoP</h2>
+				</div>
+			</div>
+			<div class="header-item">
+				<div id="user-cont">
+					<img id="user-logo" src="./resources/user-solid.svg" alt="Profile Image" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<h1>My Garden</h1>
+			<section id="view-garden-section">
+				<h2>View</h2>
+				<table id="plant-table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Birthday</th>
+							<th>Last Watering</th>
+							<th>Watering Period</th>
+							<th>Last Fertilizing</th>
+							<th>Fertilizing Period</th>
+							<th>Days Until watering</th>
+							<th>Nicknames</th>
+							<th>Notes</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</section>
+			<section id="add-plant-section">
+				<h2>Sprout</h2>
+				<form id="plant-form">
+					<div class="flex-wrapper">
+						<section id="generalFormSection">
+							<h3>General</h3>
+							<div class="flex-wrapper">
+								<label for="plantName">Name:</label>
+								<div class="input-wrapper">
+									<input id="plantName" type="text" name="name" />
+									<span class="error">*</span>
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantBirthday">Birthday:</label>
+								<div class="input-wrapper">
+									<input id="plantBirthday" type="date" name="birthday" />
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantNicknames">Nicknames:</label>
+								<div class="input-wrapper">
+									<input id="plantNicknames" type="input" name="nicknames" title="Separate nicknames by space" placeholder="Separate by ','" />
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantDescription">Description:</label>
+								<div class="input-wrapper">
+									<textarea id="plantDescription" name="description"></textarea>
+									<span class="error">*</span>
+								</div>
+							</div>
+						</section>
+						<section id="detailsFormSection">
+							<h3>Details</h3>
+							<div class="flex-wrapper">
+								<label for="plantLastWatering">Last Watering</label>
+								<div class="input-wrapper">
+									<input id="plantLastWatering" type="date" name="lastWatering" />
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantWateringPeriod">Watering Period</label>
+								<div class="input-wrapper">
+									<input id="plantWateringPeriod" type="number" name="wateringPeriod" placeholder="# of days" />
+									<span class="error">*</span>
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantLastFertilizing">Last Fertilizing</label>
+								<div class="input-wrapper">
+									<input id="plantLastFertilizing" type="date" name="lastFertilizing" />
+								</div>
+							</div>
+							<div class="flex-wrapper">
+								<label for="plantFertilizingPeriod">Fertilizing Period</label>
+								<div class="input-wrapper">
+									<input id="plantFertilizingPeriod" type="number" name="fertilizingPeriod" placeholder="# of days" />
+									<span class="error">*</span>
+								</div>
+							</div>
+						</section>
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

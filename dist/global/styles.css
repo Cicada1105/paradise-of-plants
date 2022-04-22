@@ -1,0 +1,106 @@
+/*
+	 Table of Contents
+	=======================
+	1. Global
+	2. Header/Navigation
+	3. Main
+	7. Keyframes
+	8. Media Queries
+	9. Header/Navigation - Desktop
+	10. About Me - Desktop
+	11. Projects - Desktop
+	12. Utility Classes
+*/
+
+/**************/
+/*   Global   */
+/**************/
+:root {
+	--primary-font: Poppins, sans-serif;
+	--primary-color: #359e88;
+	--secondary-color: #004138;
+	--font-color: #eeede9;
+}
+html, body {
+	background-image: url("../resources/plant-bg.jpeg");
+	background-position: top;
+	margin: 0px;
+	font-size: 16px;
+	-ms-overflow-style: 0px;
+	scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+div#bg-transparency {
+	background-color: var(--secondary-color);
+	position: fixed;
+	opacity: 0.65;
+	width: 100vw;
+	height: 100vh;
+	top: 0%;
+	z-index: 0;
+}
+/*************************/
+/*   Header/Navigation   */
+/*************************/
+header {
+	background-color: var(--primary-color);
+	position: relative;
+	padding: 0em 1em;
+	width: calc(100vw - 2em);
+}
+div#logo-cont img {
+	width: 4em;
+}
+div#logo-cont img:hover {
+	cursor: pointer;
+}
+div#logo-cont h2 {
+	color: var(--font-color);
+	font-size: 2em;
+	margin: 0px;
+}
+div#logo-cont h2:hover {
+	cursor: pointer;
+}
+div#user-cont {
+	background-color: var(--secondary-color);
+	text-align: center;
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+}
+div#user-cont > img {
+	position: relative;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 2em;
+}
+div#user-cont > img:hover {
+	cursor: pointer;
+}
+/************/
+/*   Main   */
+/************/
+main {
+	position: relative;
+}
+main > h1 {
+	color: var(--font-color);
+	width: fit-content;
+	margin: 1em auto;
+}
+/*************************/
+/*   Utility Functions   */
+/*************************/
+.flex-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+.flex-cont {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}

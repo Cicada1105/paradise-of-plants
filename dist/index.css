@@ -1,0 +1,166 @@
+/*
+	Table of Contents
+	=====================
+	1. View Garden
+	2. Sprout/Repot Plant
+*/
+/**************/
+/*   Global   */
+/**************/
+:root {
+	--primary-color: #359e88;
+	--secondary-color: #004138;
+	--font-color: #eeede9;
+	--error-color: #ff4040;
+}
+section[id $= "section"] {
+	color: var(--font-color);
+	width: 90vw;
+	margin: auto;
+}
+section[id $= "section"] > h2 {
+	margin: 1rem auto;
+	padding-left: 1rem;
+	font-size: 1.75rem;
+}
+/*******************/
+/*   View Garden   */
+/*******************/
+section#view-garden-section {
+	margin-bottom: 5rem;
+}
+table#plant-table {
+	border: 2px solid var(--font-color);
+	border-collapse: collapse;
+	min-width: 60rem;
+}
+table#plant-table thead {
+	background-color: var(--primary-color);
+}
+table#plant-table th {
+	font-size: 1.15rem;
+}
+table#plant-table th, table#plant-table td {
+	border: 2px solid var(--font-color);
+	text-align: center;
+	padding: 1rem 0.5rem;
+}
+/*  Change columns to fit content  */
+/*Plant Name*/
+table#plant-table th:nth-of-type(1) {
+	width: 15%;
+}
+/*Birthday*/
+table#plant-table th:nth-of-type(2) {
+	width: 5rem;
+}
+/*Last Watering*/
+table#plant-table th:nth-of-type(3) {
+	width: 5rem;
+}
+/*Watering Period*/
+table#plant-table th:nth-of-type(4) {
+	width: 4rem;
+}
+/*Last Fertilizing*/
+table#plant-table th:nth-of-type(5) {
+	width: 4rem;
+}
+/*Fertilizing Period*/
+table#plant-table th:nth-of-type(6) {
+	width: 4rem;
+}
+/*Nicknames*/
+table#plant-table th:nth-of-type(7) {
+	width: 15%;
+}
+i.delete-btn {
+	font-size: 1.75rem;
+}
+i.delete-btn:hover {
+	cursor: pointer;
+}
+/**************************/
+/*   Sprout/Repot Plant   */
+/**************************/
+section#add-plant-section > h2 {
+	text-align: center;
+	margin: 0rem;
+}
+form#plant-form {
+	text-align: center;
+	margin: 2rem 0rem;
+}
+form#plant-form > div {
+	margin-bottom: 2rem;
+}
+section[id $= "FormSection"] {
+	flex: 1 0 0;
+}
+section#generalFormSection {
+	border-right: 2px solid var(--primary-color);
+}
+section#detailsFormSection {
+	border-left: 2px solid var(--primary-color);
+}
+section[id $= "FormSection"] > h3 {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 1.5rem;
+}
+/* Flex wrapper around the label and inputs */
+section[id $= "FormSection"] > div {
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2rem 0rem;
+}
+section[id $= "FormSection"] label {
+	flex: 1 0 0;
+	font-size: 1.15rem;
+}
+/* Wrapper around inputs for sizing */
+div.input-wrapper {
+	position: relative;
+	flex: 1 0 0;
+}
+div.input-wrapper > input, div.input-wrapper > textarea {
+	background-color: var(--primary-color);
+	color: var(--font-color);
+	font-size: 1.15rem;
+	padding: 0.25rem 0.5rem;
+	border: none;
+	width: 80%;
+	max-width: 15rem;
+	border-radius: 0.5rem;
+}
+/* Manually set textarea parent wrapper to height of textarea (52px) */
+textarea#plant-description {
+	height: 52px;
+}
+div.input-wrapper > input:focus, div.input-wrapper > textarea:focus {
+	outline: 1px solid var(--font-color);
+}
+div.input-wrapper > input::placeholder, div.input-wrapper > textarea::placeholder {
+	color: var(--font-color);
+	opacity: 0.65;
+}
+span.error {
+	position: absolute;
+	color: var(--error-color);
+	left: 15%;
+	bottom: -12px;
+	height: 12px;
+	width: 12px;
+}
+input[type = submit] {
+	background-color: var(--primary-color);
+	color: var(--font-color);
+	font-size: 1rem;
+	padding: 0.75rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+}
+input[type = submit]:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
