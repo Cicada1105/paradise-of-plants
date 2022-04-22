@@ -22,7 +22,7 @@
 	--font-color: #eeede9;
 }
 html, body {
-	background-image: url("../resources/plant-bg.jpeg");
+	background-image: url("../../resources/plant-bg.jpeg");
 	background-position: top;
 	margin: 0px;
 	font-size: 16px;
